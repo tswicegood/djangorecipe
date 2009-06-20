@@ -101,6 +101,13 @@ testrunner
   This is the name of the testrunner which will be created. It
   defaults to `test`.
 
+git
+  By specifying `git` option, you can pull your code from a Git repository.
+  Using `true` sets the repository to the GitHub mirror of Django,
+  `git://github.com/django/django.git`.  Anything else uses that
+  repo as your clone repository.  When `git` is used, `version` is expected
+  to be a valid `tree-ish` within the repository to use for the clone.
+
 All following options only have effect when the project specified by
 the project option has not been created already.
 
